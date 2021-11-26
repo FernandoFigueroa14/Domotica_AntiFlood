@@ -25,9 +25,9 @@ function App() {
       //Primeros dos valores del hex de sigfox 
       const sensor1= hexaSigfox.charAt(0)+hexaSigfox.charAt(1);
       //Segundos dos valores del hex de sigfox 
-      const sensor2= hexaSigfox.charAt(2)+hexaSigfox.charAt(2);
+      const sensor2= hexaSigfox.charAt(2)+hexaSigfox.charAt(3);
       //Ultimos dos valores del hex de sigfox 
-      const sensor3= hexaSigfox.charAt(3)+hexaSigfox.charAt(4);
+      const sensor3= hexaSigfox.charAt(4)+hexaSigfox.charAt(5);
 
 
       Swal.fire({
