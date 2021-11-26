@@ -22,6 +22,13 @@ function App() {
       //Valor hex de sensores Sigfox 00-00-00 
       const hexaSigfox=Object.values(lastItem)[0].data;
 
+      //Primeros dos valores del hex de sigfox 
+      const sensor1= hexaSigfox.charAt(0)+hexaSigfox.charAt(1);
+      //Segundos dos valores del hex de sigfox 
+      const sensor2= hexaSigfox.charAt(2)+hexaSigfox.charAt(2);
+      //Ultimos dos valores del hex de sigfox 
+      const sensor3= hexaSigfox.charAt(3)+hexaSigfox.charAt(4);
+
 
       Swal.fire({
         position: 'center',
@@ -30,6 +37,9 @@ function App() {
         showConfirmButton: false,
         timer: 1500
       })
+      console.log(sensor1);
+      console.log(sensor2);
+      console.log(sensor3);
       console.log(hexaSigfox);
 
       //lista.forEach(element => {
